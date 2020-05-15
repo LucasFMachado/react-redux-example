@@ -93,3 +93,36 @@ export const Total = styled.div`
     margin-left: 5px;
   }
 `;
+
+export const NoProductsMessage = styled.div`
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+
+  h1 {
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  button {
+    background: #7159c1;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: background 0.2s;
+
+    &:hover {
+      background: ${darken(0.03, '#7159c1')};
+    }
+  }
+`;

@@ -6,12 +6,13 @@ import {
   MdAddCircleOutline,
   MdDelete,
 } from 'react-icons/md';
+import history from '../../services/history';
 
 import { formatPrice } from '../../utils/format';
 
 import * as CartActions from '../../store/modules/cart/actions';
 
-import { Container, ProductTable, Total } from './styles';
+import { Container, ProductTable, Total, NoProductsMessage } from './styles';
 
 function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
   function increment(product) {
@@ -22,7 +23,11 @@ function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
     updateAmountRequest(product.id, product.amount - 1);
   }
 
-  return (
+  function redirecToHome() {
+    history.push('/');
+  }
+
+  return cart.length > 0 ? (
     <Container>
       <ProductTable>
         <thead>
@@ -71,7 +76,6 @@ function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
           ))}
         </tbody>
       </ProductTable>
-
       <footer>
         <button type="button">Finalizar pedido</button>
 
@@ -81,6 +85,13 @@ function Cart({ cart, total, removeFromCart, updateAmountRequest }) {
         </Total>
       </footer>
     </Container>
+  ) : (
+    <NoProductsMessage>
+      <h1>Carrinho vazio</h1>
+      <button type="button" onClick={() => redirecToHome()}>
+        Ver produtos
+      </button>
+    </NoProductsMessage>
   );
 }
 

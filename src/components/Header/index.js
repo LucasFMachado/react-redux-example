@@ -11,9 +11,7 @@ import Logo from '../Logo';
 function Header({ cartSize }) {
   return (
     <Container>
-      <Link to="/">
-        <Logo />
-      </Link>
+      <Logo />
 
       <Cart to="/cart">
         <div>
