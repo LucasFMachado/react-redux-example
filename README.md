@@ -14,4 +14,4 @@ Para elaborar a API do projeto foi utilizada a biblioteca json-server (https://g
 
 2- Executar o comando `yarn start` (para que o front-end seja executado, utilizando a porta 3000;
 
-3- Em outra aba do terminal, executar o comando `json-server server.json -p 3333` (para que a API (contida no arquivo server.json na raiz do projeto seja executada na porta 3333).
+3- Em outra aba do terminal, executar o comando `json-server server.json -p 3333` (para que a API contida no arquivo server.json na raiz do projeto seja executada na porta 3333).
