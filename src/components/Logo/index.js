@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { LogoReduxStore } from './styles';
+import { LogoReduxShoes } from './styles';
 import reduxLogo from '../../assets/images/reduxLogo.svg';
 
 export default function Logo() {
   return (
-    <LogoReduxStore>
-      <img src={reduxLogo} alt="ReduxStore" />
-      <a href="/">ReduxStore</a>
-    </LogoReduxStore>
+    <LogoReduxShoes>
+      <img src={reduxLogo} alt="ReduxShoes" />
+      <span href="/">ReduxShoes</span>
+    </LogoReduxShoes>
   );
 }

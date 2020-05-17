@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LogoReduxStore = styled.div`
+export const LogoReduxShoes = styled.div`
   align-items: center;
   text-decoration: none;
   transition: opacity 0.2s;
@@ -9,7 +9,7 @@ export const LogoReduxStore = styled.div`
     opacity: 0.7;
   }
 
-  a {
+  span {
     color: #fff;
     margin-left: 7px;
     font-size: 36px;
