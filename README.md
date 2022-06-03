@@ -1,6 +1,6 @@
 # ReduxShoes
 
-> This project is a dashboard for financial control, developed using TypeScript.
+> This project was developed with the main purpose of demonstrating the functioning of a React application that uses Redux and Redux Saga, to manage global states.
 > 
 > It is an application that has only two screens:
 > - Product listing
