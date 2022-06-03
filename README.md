@@ -1,17 +1,23 @@
-## ReduxShoes
+# ReduxShoes
 
-Este projeto consiste em duas telas:
-- Listagem de produtos
-- Carrinho de compras
+> This project is a dashboard for financial control, developed using TypeScript.
+> 
+> It is an application that has only two screens:
+> - Product listing
+> - Shopping cart
+> 
+> To develop the project's API, the json-server library (https://github.com/typicode/json-server) was used, which simulates a Rest API according to the model created. The API data contains the information and the number in stock of each of the available products.
 
-O mesmo foi desenvolvido com o intuito de demonstrar, principalmente, o funcionamento de um projeto React utilizando Redux/Redux Saga, além da utilização de outras bibliotecas secundárias.
 
-Para elaborar a API do projeto foi utilizada a biblioteca json-server (https://github.com/typicode/json-server) que simula uma API Rest de acordo com o modelo elaborado. Nela, estão contidas as informações e o número em estoque de cada um dos produtos.
+##### To run the project, run the following commands:
+* Clone the repository: ```$ git clone /* project_repository */ ```
+* Install project dependencies: ```$ yarn```
+* Run the project: ```$ yarn start```
+* Run the Fake API: ```$ json-server server.json -p 3333```
 
-## Para executar o projeto
-
-1- Dirigir-se à pasta do projeto em seu computador, através do terminal;
-
-2- Executar o comando `yarn start` (para que o front-end seja executado, utilizando a porta 3000;
-
-3- Em outra aba do terminal, executar o comando `json-server server.json -p 3333` (para que a API contida no arquivo server.json na raiz do projeto seja executada na porta 3333).
+##### Technologies used in this project:
+* [React Router DOM](https://v5.reactrouter.com/web/guides/quick-start) - to manage application routes
+* [Redux](https://redux.js.org) - to save global application states
+* [Redux Saga](https://redux-saga.js.org) - to manage global application states
+* [Styled Components](https://styled-components.com) - for application styling
+* [JSON Server](https://github.com/typicode/json-server) - to mock the project API
